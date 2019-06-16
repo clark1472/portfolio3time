@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+
+    <!--css-->
+    <link rel="stylesheet" media="screen" href="assets/css/style.css">
+
+    <title>Contact</title>
+</head>
+
+<body>
+    <!-- Navbar -->
+    <nav class="navbar navbar-light bg-white">
+        <div>
+            <a class="navbar-brand" href="index.html" id="myName">Christine Clark</a>
+        </div>  <!--navbar my name -->
+        
+    <!-- navbar for about, portfolio and contact -->
+        <!-- <div class="d-flex mx-sm-3">  does not work -->
+        <!-- <div class="d-flex flex-sm-row"> does not work -->
+        <div class="d-flex">
+          <ul class="nav" id="threeLinks">
+            <li class="nav-item">
+              <a class="nav-link" href="index.html">About</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item active">
+              <a class="nav-link" id="contact" href="contact.html">Contact</a>
+            </li>
+          </ul> 
+        </div>  <!--navbar for about, portfolio and contact -->
+      </nav>  <!--nav bar box -->
+
+<!-- ============= container ==============================-->
+    <div class="container contactContainer">
+        <div class="d-flex flex-row">
+            <div class="col">
+                <h1 class="block-header">Contact</h1>
+            </div>  <!--this is column-->
+        </div>  <!--this is row-->
+
+    <hr />  <!--this is the horizonal line-->
+
+        <form>
+            
+            <div class="form-group row">
+                <label for="userName">Name</label>
+                <input type="text" class="form-control" id="userName" placeholder="Enter username">
+            </div>  <!--form-group-->
+
+            <div class="form-group row">
+                <label for="exampleInputEmail1">Email address</label>
+                <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp"
+                    placeholder="example@gmail.com">
+            </div>  <!--form-group-->
+
+            <div class="form-group row">
+                <label for="message">Message</label>
+                <textarea class="form-control" id="message" rows="5" placeholder="Write comments here..."></textarea>
+            </div>  <!--form-group-->
+        
+            <button type="submit" class="btn btn-info">Submit</button>
+
+        </form>
+        <br>
+    </div>  <!-- container -->
+
+    <!--footer-->
+    <footer class="footer-fluid text-center">
+        &copy Copyright 2019
+    </footer>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+</body>
+
+</html>

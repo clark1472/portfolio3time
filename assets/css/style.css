@@ -1,0 +1,265 @@
+/* ======== Navbar header all three pages ======== */
+.navbar {
+  border-bottom: 2px solid grey;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+}
+
+#myName {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-size: 30px;
+  float: left;
+  width: 300px;
+  height: 90px;
+  font-weight: bold;
+  text-align: center;
+  color: white;
+  line-height: 75px;
+  background: #4aaaa5;
+  margin: 0 0 0 20px;
+  
+ }
+ 
+.nav-link {
+   margin: 10px 10px 10px 0;
+   padding-left: 10px;
+   background: white;
+   color: grey;
+   border-left: 1px solid grey;
+   font-size: 20px;
+ }
+
+ .nav-item { 
+   margin: 0;
+   padding: 0;
+   display: inline-block;
+   text-align: right;
+ }
+
+
+#contact {
+  margin-right: 10px;
+  border-right: 1px solid grey;
+}
+
+ /* Like this feature includes padding and border in total width & height NICE */
+  * {
+    box-sizing: border-box;
+  }
+
+  /* ============== About Me specifics =============== */
+
+  /* for about me photo */
+#about-image {
+  float: left;
+  width: 100%;
+  margin: 0;
+  clear: both;
+}  
+
+
+p {
+  padding: 0;
+  margin: 0;
+  float: left;
+  clear: both;
+  word-wrap: normal;
+  display: block;
+}
+
+.container {
+  width: 90%;
+  max-width: 960px;
+  padding: 30px;
+  background-color: white;
+  clear: both;
+}
+
+.aboutContainer {
+  margin: 30px 0 300px 20px;
+}
+
+  /* ============= portfolio  specifics =============== */
+
+ .portContainer {
+    margin: 30px 0 30px 20px;
+}
+
+
+  /* ============= contact specifics ================== */
+
+ .contactContainer {
+  margin: 30px 0 180px 20px;
+}
+  
+body {
+  font-family: Arial, "Helvetica Neue", Helvetica, sans-serif;
+  font-size: 18px;
+  line-height: 34px;
+  background: url("../images/concrete_seamless.png");
+} 
+
+hr {
+  border-top-width: 3px;
+}
+
+h1 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  color: white;
+}
+
+h3 {
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  line-height: 30px;
+  margin-top: 10px;
+  font-size: 30px;
+  box-sizing: border-box;
+  background-color: #4aaaa5;
+  color: white;
+}
+
+/* need extra padding because form takes away */
+form {
+  padding: 15px;
+}
+
+/* portfolio rows */
+.one .two .three .four{
+  width: 100%;
+  padding: 30px;
+  margin: 30px 0;   
+  background: #ffffff;
+}
+
+.block {
+ background-color: white;
+ padding: 30px;
+ max-width: 980px;
+ }
+
+.block-header {
+  color: #4aaaa5;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+}
+
+.btn-info {
+  background-color: #4aaaa5;
+}
+
+footer {
+  clear: both;
+  padding: 30px 0;
+  color: #ffffff;
+  background: #666666;
+  border-top: 8px solid #4aaaa5;
+  text-align: center;
+  margin: auto;
+}
+
+/* ========== portfolio items ============*/
+.port {
+  color: #4aaaa5;
+  font-family: Georgia, 'Times New Roman', Times, serif;
+  font-weight: bold;
+  padding-top: 20px;
+}
+
+.text-block {
+  position: absolute;
+  bottom: 40px;
+  right: 15px;
+  left: 15px;
+  text-align: center;
+  background-color: #4aaaa5;
+  color: white;
+  padding-left: 0;
+  padding-right: 0;
+}  
+
+.img-responsive{
+  margin-bottom: 30px;
+  width: 100%;
+}
+
+
+
+
+/* ======= breakpoint page ==========  */
+
+/* ==== this is the navbar ====== */
+@media screen and (max-width: 767px) {
+  #myName {
+    float: left;
+    width: 767px;
+    }
+  
+   div {
+     background-color: white;
+   }
+  }
+
+@media only screen and (max-width: 575px) {
+  #myName {
+    width: 575px;
+    margin: 0;
+    max-width: 575px;
+    clear: both;
+    text-align: center;
+    background: #4aaaa5;
+  }
+
+  #threeLinks {
+    margin-left:140px;   
+    background-color: red;
+  }
+}
+
+/* ======= this is the body ==========  */
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) { 
+  .img-responsive {
+    width: 95%;
+    height: 95%;
+    padding-bottom: 30px;
+  }
+  .portContainer {
+    width: 100%;
+    height: 100%;
+    background-color: green;
+ }
+  }
+
+/* Medium devices (tablets, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  .img-responsive {
+    width: 100%;
+    height: 100%;
+    padding-bottom: 30px;
+    
+  }
+  .portContainer {
+    width: 100%;
+    height: 100%;
+    background-color: blue;
+ }
+
+/* Large devices (desktops, 992px and up) */
+/* @media (min-width: 992px) and (max-width: 1199.98px) {  */
+@media (min-width: 992px) {  
+.img-responsive {
+  width: 100%;
+  height: 100%;
+  }
+.portContainer {
+  width: 70%;
+  height: 70%;
+  background-color: yellow;
+  }
+}
+
+
+
