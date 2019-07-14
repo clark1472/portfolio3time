@@ -1,98 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
 
-<head>
-  <!-- Required meta tags -->
-  <meta charset="utf-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, shrink-to-fit=no">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-  <!-- Bootstrap CSS -->
-  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
 
-  <!--css-->
-  <link rel="stylesheet" media="screen" href="assets/css/style.css">
-
-  <title>About Me</title>
+    <!--css-->
+    <link rel="stylesheet" media="screen" href="assets/css/style.css">
+    <title>About Me</title>
 </head>
 
 <body>
-  <!-- Navbar -->
-  <nav class="navbar navbar-light bg-white">
-      <div>
-        <a class="navbar-brand" id="myName">Christine Clark</a>
-      </div>  <!--navbar my name -->
-  
-      
+    <!--============= Navbar header ==============-->
 
-      <!-- navbar for about, portfolio and contact -->
-      <div>
-        <!-- <ul class="nav justify-content-end" id="threeLinks"></ul> -->
-        <ul class="nav" id="threeLinks"></ul>
-          <li class="nav-item">
-            <a class="nav-link active" href="index.html">About</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" href="portfolio.html">Portfolio</a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" id="contact" href="contact.html">Contact</a>
-          </li>
-        </ul> 
-      </div>  <!--navbar for about, portfolio and contact -->
+    <nav class="navbar navbar-expand-md navbar-dark bg-custom">
+          
+        <a class="navbar-brand" href="index.html" id="myName">Christine Clark</a>
 
-  </nav>  <!--nav bar box -->
+     <!-- Toggler/collapsibe Button -->
+        <button class="navbar-toggler custom-toggler" type="button" data-toggle="collapse" data-target="#collapsibleNavbar"> <span class="navbar-toggler-icon"></span> </button>
 
-  <!-- ============= container ==============================-->
-
-  <div class="container aboutContainer" >
-    <div class="d-flex flex-row">
-      <div class="col">
-          <h1 class="block-header">About Me</h1>
-      </div>  <!--this is column-->
-    </div>  <!--this is row-->
-
-    <hr />  <!--this is the horizonal line in whitebox-->
-    <!--Did not do anything expecting an incomplete-->
-
-    <!-- photo in top left paragraph around image -->
-    <div class="d-flex flex-row flex-wrap">
-      <div class="col-sm-12 col-md-6 col-lg-4">
-        <img src="assets/images/christen school.jpg" alt="" id="about-image"/>
-      </div>  <!--  this is myPhoto-->
+    <div class="collapse navbar-collapse" id="collapsibleNavbar">  
+        <ul class="navbar-nav" id="threelinkss">
        
-    <!-- paragraph -->
-      <div class="col-sm-12 col-md-6 col-lg-8" id="paragraph">
-        <p>
-        Detailed oriented person that thrives on handling many tasks. Let’s keep all the balls moving to completion. I am a cooperative team player who is always focused on the goal. I am flexible and easy going, most things don’t rattle me. I like to think outside the box. I will find a different way to use a tool than it was made for.
-        </p>
-      </div>  <!--paragraph-->
+            <li class="nav-item">
+                <a class="nav-link" href="index.html">About</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" href="portfolio.html">Portfolio</a>
+            </li>
+            <li class="nav-item">
+                <a class="nav-link" id="contact" href="contact.html">Contact</a>
+            </li>
+        
+        </ul>  <!--navbar threeLinks-->
+    </div>  <!-- collapse navbar-->
+    </nav>  <!--navbar -->
 
-      <div class="col-12">  <!-- row -->
-          <p>
-             It confuses some people, excites others. I like making charts, lists and word documents to see a progression of getting things done. I am creative with a touch of independence. Give me a chance to be inventive and I will surprise you.
-          </p>
-      </div>  <!-- column -->
-    </div>  <!-- row -->
-  </div> <!--container-->
 
+    <!-- ============= container ======================-->
 
-  <!--footer-->
-  <footer class="footer-fluid text-center">
-    &copy Copyright 2019
-  </footer>
+    <div class="container" id="aboutContainer">
+        <div class="row mainSection">
+            <div class="col">
+                <h1>About Me</h1>
+            </div>
+        </div>
+        <div class="row stats">
+            <div class="col-md-6">
+                <img src="assets/images/christen school.jpg" alt="my photo" id="about-image"/>
+            </div>
+            <div class="col-md-6">    
+                <p>
+                    Front-End Web Developer with a background in Design. Attended the University of Arizona, where I received skills in HTML, CSS, JavaScript, Bootstrap, jQuery, React and GitHub technologies. Passionate about web development because front end design speaks to me.  The creativity of the field demands new and ever challenging skills. 
+                </p>
+            </div>  
+        </div>          
+        <div class="row">
+            <div class="col">
+                <p>
+                    Like developing user-facing code and bring customer concepts to life. I enjoy playing with javaScript functions, responsive images and bootstrap 4 responsive layouts. Front-End uses my graphic design skills with the coding principles that are in demand.  
+                </p>
+            </div>             
+        </div>
+    </div> <!-- container -->
 
-  <!-- Optional JavaScript -->
-  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
-  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
-    integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
-    crossorigin="anonymous"></script>
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
-    integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
-    crossorigin="anonymous"></script>
-  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
-    integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
-    crossorigin="anonymous"></script>
+    <!--============ connect icons =============-->
+    <div class="card" id="connect">
+            <h2>Connect with Me</h2>
+            <div class="d-flex justify-content-around">
+                <a href="https://github.com/clark1472" target="_blank"><img src="assets/images/iconfinder_github_square_black_107109.png" class="icons" alt="GitHub"/></a>
+                <a href="https://www.linkedin.com/in/christine-clark-9b896397/" target="_blank"><img src="assets/images/iconfinder_linkedin_square_color_107091.png" class="icons" alt="LinkedIn"/></a>
+                <a href="https://stackoverflow.com/users/10868643/christen1472" target="_blank"><img src="assets/images/iconfinder_stackoverflow_273179.png" class="icons" id="stack"alt="Stack Overflow"/></a>
+            </div>
+        </div>
+    <!--========== footer ============================-->
+    <footer>
+        &copy Copyright 2019 Christen Clark
+    </footer>
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
 </body>
 
 </html>
