@@ -1,5 +1,9 @@
 # Portfolio-Update
 
+# To pull up "About" page use this link:
+
+[About page](https://clark1472.github.io/portfolio3time/)
+
 =================================================================
 
 # Portfolio image # 1 Stargate Trivia Game 
